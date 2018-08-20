@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Calculator</title>
+       <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
 
@@ -11,14 +12,14 @@
 
 			<!--First display that shows what was written previosly.-->
 			<tr>
-				<td>
+				<td colspan="4">
 					<input type="text" name="display1" id="display1" disabled>
 				</td>
 			</tr>
 
 			<!--Second and main display that shows what is written at the moment.-->
 			<tr>
-				<td>
+				<td colspan="4">
 					<input type="text" name="display2" id="display2" disabled>
 				</td>
 			</tr>
@@ -27,38 +28,59 @@
 			<tr>
 
               <td>
-              	<input type=”button” name=”one” value=”1" onclick=”calculator.display.value += ‘1’”>
+              	<input type="button" name="one" value="1" onclick="calculator.display.value += ‘1’">
               </td>
 
               <td>
-              	<input type=”button” name=”two” value=”2" onclick=”calculator.display.value += ‘2’”>
+              	<input type="button" name="two" value="2" onclick="calculator.display.value += ‘2’">
               </td>
 
               <td>
-              	<input type=”button” name=”three” value=”3" onclick=”calculator.display.value += ‘3’”>
+              	<input type="button" name="three" value="3" onclick="calculator.display.value += ‘3’">
               </td>
 
               <td>
-              	<input type=”button” class=”operator” name=”plus” value=”+” onclick=”calculator.display.value += ‘+’”>
+              	<input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += ‘+’">
               </td>
 
               <!--Second row of buttons (or the fourth row overall). This includes the numbers 4 to 6 and the subtraction button.-->
 			<tr>
 
               <td>
-              	<input type=”button” name=”four” value=”4" onclick=”calculator.display.value += ‘4’”>
+              	<input type="button" name="four" value="4" onclick="calculator.display.value += ‘4’">
               </td>
 
               <td>
-              	<input type=”button” name=”five” value=”5" onclick=”calculator.display.value += ‘5’”>
+              	<input type="button" name="five" value="5" onclick="calculator.display.value += ‘5’">
               </td>
 
               <td>
-              	<input type=”button” name=”six” value=”6" onclick=”calculator.display.value += ‘6’”>
+              	<input type="button" name="six" value="6" onclick="calculator.display.value += ‘6’">
               </td>
 
               <td>
-              	<input type=”button” class=”operator” name=”minus” value=”-” onclick=”calculator.display.value += ‘-’”>
+              	<input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += ‘-’">
+              </td>
+
+           </tr>
+
+           <!--Third row of buttons (or the fifth row overall). This includes the numbers 7 to 9 and the multiplication button.-->
+                     <tr>
+
+              <td>
+                     <input type="button" name="seven" value="7" onclick="calculator.display.value += ‘7’">
+              </td>
+
+              <td>
+                     <input type="button" name="eight" value="8" onclick="calculator.display.value += ‘8’">
+              </td>
+
+              <td>
+                     <input type="button" name="nine" value="9" onclick="calculator.display.value += ‘9’">
+              </td>
+
+              <td>
+                     <input type="button" class="operator" name="multiply" value="*" onclick="calculator.display.value += ‘*’">
               </td>
 
            </tr>
