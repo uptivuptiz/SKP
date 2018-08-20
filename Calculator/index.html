@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+
+	<form name="Calculator">
+		
+		<table>
+
+			<!--First display that shows what was written previosly.-->
+			<tr>
+				<td>
+					<input type="text" name="display1" id="display1" disabled>
+				</td>
+			</tr>
+
+			<!--Second and main display that shows what is written at the moment.-->
+			<tr>
+				<td>
+					<input type="text" name="display2" id="display2" disabled>
+				</td>
+			</tr>
+
+			<!--First row of buttons (or the third row overall). This includes the numbers 1 to 3 and the addition button.-->
+			<tr>
+
+              <td>
+              	<input type=”button” name=”one” value=”1" onclick=”calculator.display.value += ‘1’”>
+              </td>
+
+              <td>
+              	<input type=”button” name=”two” value=”2" onclick=”calculator.display.value += ‘2’”>
+              </td>
+
+              <td>
+              	<input type=”button” name=”three” value=”3" onclick=”calculator.display.value += ‘3’”>
+              </td>
+
+              <td>
+              	<input type=”button” class=”operator” name=”plus” value=”+” onclick=”calculator.display.value += ‘+’”>
+              </td>
+
+              <!--Second row of buttons (or the fourth row overall). This includes the numbers 4 to 6 and the subtraction button.-->
+			<tr>
+
+              <td>
+              	<input type=”button” name=”four” value=”4" onclick=”calculator.display.value += ‘4’”>
+              </td>
+
+              <td>
+              	<input type=”button” name=”five” value=”5" onclick=”calculator.display.value += ‘5’”>
+              </td>
+
+              <td>
+              	<input type=”button” name=”six” value=”6" onclick=”calculator.display.value += ‘6’”>
+              </td>
+
+              <td>
+              	<input type=”button” class=”operator” name=”minus” value=”-” onclick=”calculator.display.value += ‘-’”>
+              </td>
+
+           </tr>
+
+		</table>
+
+	</form>
+
+</body>
+</html>>
